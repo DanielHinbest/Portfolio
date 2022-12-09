@@ -1,0 +1,11 @@
+{% if post_list %}
+<ul>
+    {% for post in post_list %}
+    <li><a href="{% url 'portfolio:view_post' post.id %}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No posts are available.</p>
+{% endif %}
+
+<a href="{% url 'portfolio:create_post' %}">Create post</a>
