@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, HttpResponseRedirect
-from django.urls import reverse
-from .forms import CreatePostForm
+from django.http import HttpResponse
+from .forms import PostForm
 from django.views import generic
 
 from .models import Post
@@ -22,24 +21,20 @@ class PostView(generic.DetailView):
     template_name = 'portfolio/view_post.html'
 
 # Must be restricted access
-class CreatePostView(generic.FormView):
-    form_class = CreatePostForm
-    template_name = 'portfolio/create_post.html'
-    success_url = ''
+class CreatePostView(generic.CreateView):
+    form_class = PostForm
+    template_name = 'portfolio/post_form.html'
+    success_url = '/'
 
 # Must be restricted access. Should be similar to create post, class view
-# class EditPostView(generic.FormView):
-#     form_class = EditPostForm
-#     template_name = 'portfolio/edit_post.html'
-#     success_url = ''
-
-def edit_post(request):
-    return HttpResponse("This will be the edit post page")
+class EditPostView(generic.UpdateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'portfolio/post_form.html'
+    success_url = '/'
 
 # Must be restricted access. Will determine whether it's needed at a later time, should be class view
-# class DeletePostView(generic.FormView):
-#     form_class = DeletePostForm
-#     template_name = 'portfolio/delete_post.html'
-#     success_url = ''
-def delete_post(request):
-    return HttpResponse("This will be the delete post page")
+class DeletePostView(generic.DeleteView):
+    model = Post
+    template_name = 'portfolio/delete_post.html'
+    success_url = '/'

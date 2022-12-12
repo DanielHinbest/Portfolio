@@ -1,0 +1,44 @@
+Application notes:
+- Use Django backend with React frontend
+- Create some way of viewing PDF version of the resume. Alternatively have a web page seperate for the resume with a download button
+- Hosted on Heroku most likely
+	- Heroku Basic (est. $7/mo) + Postgres Mini est. ($5/mo) = est. $12/mo 
+	- Research other options
+Username: hinbestd
+Password: oF6HfM8tQA4m
+
+What's done:
+- All CRUD implemented successfully. Ensure CRUD can only be accessed with user authentication
+
+Notes from LinkedIn Learning videos
+Work on sample projects
+	- Recipe App
+		- Showcase navigation, going from list to detail view
+		- Showcase persistence, saving recipes
+	- To Do List
+		- Great for CRUD functionality
+	- Online game
+		-Snake is popular for simple graphics and simplistic design
+
+Contribute to open-source
+	- Reference as proof of skills
+	- Tasks often set aside for beginners
+	- Contribute small changes to make a difference
+	- Check GitHub for Help Wanted, Good For Beginners, and Good First Issue
+
+Internships
+	- Gains work experience
+	- Stand out among competition
+	- Handles more responsibilities
+
+Personal Blog
+	- Blogging shows effective communication
+	- Topics can include:
+		- Learning something new
+		- Setting up a sample project
+		- Overcoming a technical challenge
+		- Takeaways from an event or conference
+
+Suggestions for building porfolio
+- Build a blog as the first project and build a portfolio within it
+	- List each project and a description about it, include a source code link, and a web based link if necessary
