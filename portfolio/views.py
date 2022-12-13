@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from .forms import PostForm
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, ListView
 from django.contrib.auth import logout
@@ -6,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.shortcuts import render
 
 from .models import Post
 
@@ -44,7 +44,7 @@ class DeletePostView(LoginRequiredMixin, DeleteView):
     success_url = '/'
 
 def about(request):
-    return HttpResponse("This will be the about me page")
+    return render(request, 'portfolio/about.html')
 
 @login_required(login_url='/')
 def logout_view(request):
