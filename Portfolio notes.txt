@@ -7,7 +7,7 @@ Application notes:
 Username: hinbestd
 Password: oF6HfM8tQA4m
 
-- Figure out how to add external links to template
+- See if using forms fixes buttom formatting
 
 Notes from LinkedIn Learning videos
 Work on sample projects
