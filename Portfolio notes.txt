@@ -7,8 +7,7 @@ Application notes:
 Username: hinbestd
 Password: oF6HfM8tQA4m
 
-What's done:
-- All CRUD implemented successfully. Ensure CRUD can only be accessed with user authentication
+- Figure out how to add external links to template
 
 Notes from LinkedIn Learning videos
 Work on sample projects
