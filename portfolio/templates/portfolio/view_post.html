@@ -1,3 +1,5 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
 <h1>{{ post.title }}</h1>
 <ul>
     <li>{{ post.content }}</li>
@@ -8,3 +10,4 @@
 <a href="{% url 'portfolio:delete_post' post.id %}">Delete post</a>
 <a href="{% url 'portfolio:logout' %}">Logout</a>
 {% endif %}
+{% endblock %}

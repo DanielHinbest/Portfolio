@@ -1,6 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
 <form action = "" method = "post">
     {% csrf_token %}
     {{ form.as_table }}
     <input type="submit" value=Post>
 </form>
 <a href="{% url 'portfolio:logout' %}">Logout</a>
+{% endblock %}
