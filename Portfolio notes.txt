@@ -12,7 +12,9 @@ To do:
 - Create mailto setup for email contact
 - Add return to home links to all pages
 - Populate about page
+- Add photos to about page
 - Add some photo fields and welcome message on home page
+- Change the footer
 
 Notes from LinkedIn Learning videos
 Work on sample projects
