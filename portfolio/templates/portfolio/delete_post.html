@@ -1,18 +1,17 @@
 {% extends 'portfolio/base.html' %}
 {% block title %}Delete {{ post.title }}{% endblock %}
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-     
- 
- 
- 
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-     
-     
-     
-     
-        <input type="submit" value="Confirm">
-    </form>
-
+<div class="album py-5 bg-light">
+    <div class="container">
+        <center>
+            <h2>Delete {{ post.title }}?</h2>
+            <form method="post">
+                {% csrf_token %} 
+                <p>Are you sure you want to delete "{{ object }}"?</p>
+                <input class="btn btn-danger" type="submit" value="Confirm">
+                <a href="{% url 'portfolio:view_post' post.id %}"><button class="btn btn-light" type="button">Cancel</button></a>
+            </form>
+        </center>
+    </div>
+</div>
 {% endblock %}

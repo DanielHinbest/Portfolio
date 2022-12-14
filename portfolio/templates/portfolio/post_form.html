@@ -16,7 +16,7 @@ Create Post
                 <h2>Create Post</h1>
             {% endif %}
         </center>
-        <form class="form-group" action="" method = "post">
+        <form class="form-group" action="" method="post">
             {% csrf_token %}
             {{ form.as_table }}
             <center>
