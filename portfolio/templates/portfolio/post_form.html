@@ -1,9 +1,32 @@
 {% extends 'portfolio/base.html' %}
+{% block title %}
+{% if post.title != Null %}
+Edit {{ post.title }}
+{% else %}
+Create Post
+{% endif %}
+{% endblock %}
 {% block content %}
-<form action = "" method = "post">
-    {% csrf_token %}
-    {{ form.as_table }}
-    <input type="submit" value=Post>
-</form>
-<a href="{% url 'portfolio:logout' %}">Logout</a>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <center>
+            {% if post.title != Null %}
+                <h2>Edit Post - {{ post.title }}</h1>
+            {% else %}
+                <h2>Create Post</h1>
+            {% endif %}
+        </center>
+        <form class="form-group" action="" method = "post">
+            {% csrf_token %}
+            {{ form.as_table }}
+            <center>
+                <input class="btn btn-primary" type="submit" value=Post>
+                <br/>
+                <a href="{% url 'portfolio:index' %}"><button class="btn btn-danger" type="button">Cancel</button></a>
+            </center>
+        </form>
+        <center>
+        </center>
+    </div>
+</div
 {% endblock %}
