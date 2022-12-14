@@ -8,6 +8,8 @@ Username: hinbestd
 Password: oF6HfM8tQA4m
 
 - See if using forms fixes buttom formatting
+- Add photo gallery in about page
+- Create mailto setup for email contact
 
 Notes from LinkedIn Learning videos
 Work on sample projects

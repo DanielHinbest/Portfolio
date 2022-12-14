@@ -34,10 +34,10 @@
                   <a href="{% url 'portfolio:edit_post' post.id %}"><button type="button" class="btn btn-sm btn-outline-secondary">Edit</button></a>
                   {% endif %}
                   {% if post.source_code_url != Null %}
-                  <a href="{{ post.source_code_url }}"><button type="button" class="btn btn-sm btn-outline-secondary"><img width="33" height="33" src="{% static 'portfolio/images/github.png' %}" alt="View on GitHub"/></button></a>
+                  <a href="{{ post.source_code_url }}"><button type="button" class="btn btn-sm btn-outline-secondary"><img width="20" height="15" src="{% static 'portfolio/images/github.png' %}" alt="View on GitHub"/> View GitHub</button></a>
                   {% endif %}
                   {% if post.website_url != Null %}
-                  <a href="{{ post.website_url }}"><button type="button" class="btn btn-sm btn-outline-secondary"><img width="33" height="33" src="{% static 'portfolio/images/website.png' %}" alt="View website"/></button></a>                 
+                  <a href="{{ post.website_url }}"><button type="button" class="btn btn-sm btn-outline-secondary"><img width="20" height="15" src="{% static 'portfolio/images/website.png' %}" alt="View website"/> View Website</button></a>                 
                   {% endif %}
                 </div>
                 <small class="text-muted">{{ post.pub_date }}</small>
