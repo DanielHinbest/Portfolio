@@ -8,10 +8,11 @@ Username: hinbestd
 Password: oF6HfM8tQA4m
 
 To do:
-- Create some way of viewing PDF version of the resume. Alternatively, have a web page seperate for the resume with a download button
 - Add photo gallery in about page
 - Create mailto setup for email contact
 - Add return to home links to all pages
+- Populate about page
+- Add some photo fields and welcome message on home page
 
 Notes from LinkedIn Learning videos
 Work on sample projects
