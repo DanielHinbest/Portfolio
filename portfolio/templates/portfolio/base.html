@@ -26,11 +26,13 @@
           <p class="text-muted">Add some information about the album below, the author, or any other background context. 
             Make it a few sentences long so folks can pick up some informative tidbits. 
             Then, link them off to some social networking sites or contact information. <a href="{% url 'portfolio:about' %}"><font color="white">Read more</font></a></p>
+          <br/>
+          <p><a class="text-white" href="{% static 'portfolio/files/resume.pdf' %}" target="_blank">View my resume</a></p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contact</h4>
           <ul class="list-unstyled">
-            <li><a href="https://www.linkedin.com/in/daniel-hinbest/" class="text-white"><img height="33" width="33" src="{% static 'portfolio/images/linkedin.png' %}"/>LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/daniel-hinbest/" class="text-white" target="_blank"><img height="33" width="33" src="{% static 'portfolio/images/linkedin.png' %}"/>LinkedIn</a></li>
             <li><a href="#" class="text-white"><img height="25" src="{% static 'portfolio/images/email.png' %}"/>Email me</a></li>
           </ul>
         </div>
