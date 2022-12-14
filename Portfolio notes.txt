@@ -1,15 +1,15 @@
 Application notes:
-- Use Django backend with React frontend
+- Use Django backend=
 - Create some way of viewing PDF version of the resume. Alternatively have a web page seperate for the resume with a download button
 - Hosted on Heroku most likely
 	- Heroku Basic (est. $7/mo) + Postgres Mini est. ($5/mo) = est. $12/mo 
 	- Research other options
 Username: hinbestd
 Password: oF6HfM8tQA4m
-
 - See if using forms fixes buttom formatting
 - Add photo gallery in about page
 - Create mailto setup for email contact
+- Add return to home links to all pages
 
 Notes from LinkedIn Learning videos
 Work on sample projects
