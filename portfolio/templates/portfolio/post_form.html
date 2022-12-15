@@ -21,8 +21,12 @@ Create Post
             {{ form.as_table }}
             <center>
                 <input class="btn btn-primary" type="submit" value=Post>
+                {% if post.title != Null %}
+                    <br/>
+                    <a class="btn btn-danger" href="{% url 'portfolio:delete_post' post.id %}">Delete</a>
+                {% endif %}
                 <br/>
-                <a href="{% url 'portfolio:index' %}"><button class="btn btn-danger" type="button">Cancel</button></a>
+                <a class="btn btn-danger" href="{% url 'portfolio:index' %}">Cancel</a>                
             </center>
         </form>
         <center>
