@@ -10,37 +10,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
+        <center><img width="400" src="{% static 'portfolio/images/grad.jpg' %}"/></center>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
+        <center><img src="{% static 'portfolio/images/skills_ontario.jpeg' %}"/></center>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
+        <center><img width="500" src="{% static 'portfolio/images/diploma.jpeg' %}"/></center>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -53,6 +29,22 @@
     </button>
 </div>
 <div class="container">
-    <p>This will be the about page<p>
+  <center><h1>About Daniel</h1></center>
+
+  <h2>Notable Achievements</h2>
+  <h3>Gold Medal: Skills Ontario Competition - Coding (2022)</h3>
+  <p>
+    
+  </p>
+
+  <h2>My Education</h2>
+  <h3>Computer Programming and Analysis, Durham College (2019-2022)</h3>
+  <p>
+    I am a 2022 graduate of Computer Programming and Analysis at <a href="https://durhamcollege.ca">Durham College</a>, where I graduated on the President's Honour Roll.
+    In this program, I worked with several programming languages and technologies that are widely used in the industry. Some of the languages I worked with while studying
+    were Java, C#, JavaScript, SQL, PHP, and COBOL. I learned the best practices for building a relational database in Microsoft SQL Server, PostgreSQL, and MySQL,
+    build technical UML activity diagrams, class diagrams, and activity diagrams. I got a lot of practice in building websites that would run on Apache HTTP Server and Tomcat,
+    and also experiment with web frameworks including Spring, ASP.NET, Node.js, and Laravel.
+  </p>
 </div>
 {% endblock content %}
