@@ -12,6 +12,8 @@ To do:
 - Add return to home links to all pages
 - Add some photo fields and welcome message on home page
 - Change the footer
+- Set an icon
+- Remove buttons and use a tags with button classes
 
 Notes from LinkedIn Learning videos
 Work on sample projects

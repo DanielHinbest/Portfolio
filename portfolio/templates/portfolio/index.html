@@ -5,11 +5,14 @@
 <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="fw-light">Welcome to my Portfolio</h1>
+        <p class="lead text-muted">
+          Thank you for taking the time to visit my portfolio website. Below you can find a series of projects I have worked on during personal time and in college. These projects use a range of
+          languages and tools, and show my knowledge and experience using each of them.
+        </p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          <a class="btn btn-primary" href="{% url 'portfolio:about' %}">About Me</a>
+          <a class="btn btn-primary" href="{% static 'portfolio/files/resume.pdf' %}" target="_blank">My Resume</a>
         </p>
       </div>
     </div>
