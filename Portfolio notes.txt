@@ -8,11 +8,8 @@ Username: hinbestd
 Password: oF6HfM8tQA4m
 
 To do:
-- Add photo gallery in about page
 - Create mailto setup for email contact
 - Add return to home links to all pages
-- Populate about page
-- Add photos to about page
 - Add some photo fields and welcome message on home page
 - Change the footer
 
