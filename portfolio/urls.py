@@ -1,4 +1,6 @@
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 from . import views
 
@@ -11,4 +13,4 @@ urlpatterns = [
     path('<int:pk>/edit/', views.EditPostView.as_view(), name='edit_post'),
     path('<int:pk>/delete/', views.DeletePostView.as_view(), name='delete_post'),
     path('logout/', views.logout_view, name='logout')
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
