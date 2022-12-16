@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'danielhinbestportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio_db',
-        'USER': 'hinbestd',
-        'PASSWORD': 'Curling',
-        'HOST': '127.0.0.1',
+        'NAME': 'd832tgg0680nrg',
+        'USER': 'prejthoddornwh',
+        'PASSWORD': 'c98644268c34e92ed990dc17c39bea6d022c7e4a1c4d4e4a80bf8418f8c8bd56',
+        'HOST': 'ec2-99-80-170-190.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -121,6 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_URL = 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
