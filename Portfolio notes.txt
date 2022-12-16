@@ -8,12 +8,9 @@ Username: hinbestd
 Password: oF6HfM8tQA4m
 
 To do:
-- Create mailto setup for email contact
-- Add return to home links to all pages
-- Add some photo fields on home page and post model
-- Change the footer
+- Create mailto setup for email contact - later update
+- Add some photo fields on home page and post model - later update
 - Set an icon for the page
-- Remove buttons and use a tags with button classes
 
 Notes from LinkedIn Learning videos
 Work on sample projects
