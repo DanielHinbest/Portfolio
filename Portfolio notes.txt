@@ -3,14 +3,12 @@ Application notes:
 - Hosted on Heroku most likely
 	- Heroku Basic (est. $7/mo) + Postgres Mini est. ($5/mo) = est. $12/mo 
 	- Research other options
-Django admin (localhost) login:
-Username: hinbestd
-Password: oF6HfM8tQA4m
 
 To do:
 - Create mailto setup for email contact - later update
 - Add some photo fields on home page and post model - later update
 - Set an icon for the page
+- Fix missing line breaks in view post
 
 Notes from LinkedIn Learning videos
 Work on sample projects
