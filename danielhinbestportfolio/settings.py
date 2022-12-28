@@ -125,7 +125,7 @@ STATIC_URL = 'static/'
 if not DEBUG:
     STATIC_ROOT = (os.path.join(BASE_DIR, 'static/'))
 STATICFILES_DIRS = (
-    BASE_DIR / "static",
+    BASE_DIR / "staticfiles",
     '/tmp/build_087d35a3/danielhinbestportfolio/static'
 )
 
