@@ -16,8 +16,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
-#BASE_DIR = Path(__file__).resolve().parent
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = Path(__file__).resolve().parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -123,15 +122,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = (os.path.join(BASE_DIR, 'static/'))
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  "templates"),
-    # Add to this list all the locations containing your static files 
-)
+if not DEBUG:
+    STATIC_ROOT = (os.path.join(BASE_DIR, 'static/'))
 STATICFILES_DIRS = (
-    BASE_DIR / "staticfiles",
-    '/tmp/build_087d35a3/danielhinbestportfolio/staticfiles'
+    BASE_DIR / "static",
+    '/tmp/build_087d35a3/danielhinbestportfolio/static'
 )
 
 MEDIA_URL = 'media/'
