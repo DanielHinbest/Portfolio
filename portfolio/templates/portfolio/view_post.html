@@ -19,7 +19,7 @@
             <a class="btn btn-danger" href="{% url 'portfolio:delete_post' post.id %}">Delete post</a>
             {% endif %}
         </center>
-        <h3>{{ post.technologies_used }}</h3>
+        <h6>{{ post.technologies_used }}</h6>
         <p>{{ post.content|linebreaks }}</p>
     </div>
 </div>
