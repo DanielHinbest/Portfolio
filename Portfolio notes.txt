@@ -6,9 +6,7 @@ Application notes:
 
 To do:
 - Create mailto setup for email contact - later update
-- Add some photo fields on home page and post model - later update
-- Set an icon for the page
-- Fix missing line breaks in view post
+- Add some photo fields on home page - later update
 
 Notes from LinkedIn Learning videos
 Work on sample projects
