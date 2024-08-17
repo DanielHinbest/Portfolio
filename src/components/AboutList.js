@@ -33,8 +33,8 @@ class AboutList extends React.Component{
 
                         <About sectionTitle="My Technology Experience" imagePath={process.env.PUBLIC_URL + "/images/coding.png"} paragraph="I have experience building and maintaining applications for web, desktop, and mobile environments using many languages and technologies.
                  My most proficient language is Java, which I was first introduced to in 2017, while attending high school. I have built console, desktop, and web applications using technologies including Swing UI and Spring Framework. In post-secondary education, I have
-                 also gained experience in C#, Python, C++, PHP, and JavaScript and have used technologies including Django (Python), Windows Forms, WPF, and ASP.NET (C#), Laravel (PHP), and React (JavaScript), and have built
-                 SQL databases in SQL Server, PostgreSQL, and MySQL and have experience connecting databases to web and desktop environments."/>
+                 also gained experience in C#, Python, C++, PHP, and JavaScript and have used technologies including Spring Framework (Java), Django (Python), Windows Forms, WPF, and ASP.NET (C#), and React (JavaScript). I have also built
+                 SQL databases in SQL Server, PostgreSQL, and MySQL as a database for both web and desktop environments."/>
 
                         <About sectionTitle="My Accomplishments" imagePath={process.env.PUBLIC_URL + "/images/trophy.jpg"} paragraph="I graduated high school in 2019, and was awarded the Ontario Secondary School Diploma along with other awards
                 including the Ontario Scholar, which is awarded to students with an average of 80% or higher in their best six Grade 12 courses. While studying at Durham College, I will be graduating in June 2022 with an Ontario College Advanced Diploma,
