@@ -9,7 +9,7 @@ class Main extends React.Component {
             <main>
                 <div style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
                     <Carousel>
-                        <a href="#"><img style={{ maxWidth: 800 }} src={process.env.PUBLIC_URL + "/images/slide1.jpg"} alt="Daniel Hinbest" /></a>
+                        <a href="#"><img style={{ maxWidth: 600 }} src={process.env.PUBLIC_URL + "/images/daniel.jpg"} alt="Daniel Hinbest" /></a>
                         <a href="#"><img style={{ maxWidth: 800 }} src={process.env.PUBLIC_URL + "/images/skills.jpg"} alt="Skills Ontario Medal & Certificate" /></a>
                         <a href="#"><img style={{ maxWidth: 400 }} src={process.env.PUBLIC_URL + "/images/diploma.jpg"} alt="Durham College Advanced Diploma" /></a>
                     </Carousel>
