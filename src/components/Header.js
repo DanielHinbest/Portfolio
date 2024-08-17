@@ -21,7 +21,7 @@ class Header extends React.Component {
                             </ul>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contact: daniel.hinbest@proton.me</a>
+                                    <a className="nav-link" href="#">Contact: daniel.hinbest@ontariotechu.net</a>
                                 </li>
                             </ul>
                         </div>
