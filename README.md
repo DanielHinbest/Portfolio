@@ -1,7 +1,7 @@
 # Daniel Hinbest's Portfolio
 This is a application built to showcase my skills, experience, and projects. It was written using React and 
 was the chosen framework to get some practice using React for building applications. 
-It will require the installation of Node.js and the downloading of the node modules, which can be done by running the npm install command in the directory.
+It will require the installation of Node.js and the downloading of the node modules, which can be done by running the 'npm install' command in the directory.
 
 # Getting Started with Create React App
 
@@ -33,6 +33,11 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+#### '$env:BUILD_PATH = 'docs'; npm run build'
+
+Builds the app for production into the 'docs' folder.\
+It allows for easier upload for deployment into the GitHub Pages website for automatic rebuild.
 
 ### `npm run eject`
 
