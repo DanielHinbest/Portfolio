@@ -1,7 +1,21 @@
+/**
+ * ProjectList.js
+ * 
+ * This file defines the ProjectList component, which is a React class component
+ * that renders a list of Project components. Each Project component displays information
+ * about a specific project, including a header, description, link to the project's GitHub repository,
+ * and an image.
+ * 
+ * Author: Daniel Hinbest
+ * Date: August 17, 2024
+ */
+
 import React from "react";
 import Project from "./Project";
 
+// Define the ProjectList component as a class component
 class ProjectList extends React.Component {
+    // Render method to display the component
     render() {
         return (
             <div>
@@ -17,7 +31,8 @@ class ProjectList extends React.Component {
                     GitHubPath="https://github.com/DanielHinbest/CSCI3310"
                     imageAltText="A photo of the Groceries To Go cart view"
                 /> */}
-                
+
+                {/* Project component for the Software Quality Assurance Project */}
                 <Project 
                     firstDivClass="col-md-6 order-md-2"
                     featuretteHeader="Software Quality Assurance Project"
@@ -28,9 +43,10 @@ class ProjectList extends React.Component {
                     secondDivClass="col-md-6"
                     image={process.env.PUBLIC_URL + "/images/sqa.png"}
                     GitHubPath="https://github.com/DanielHinbest/csci3060"
-                    imageAltText="A photo of the Software Quality Assurace project"
+                    imageAltText="A photo of the Software Quality Assurance project"
                 />
 
+                {/* Project component for the Capstone Project: Groceries To Go */}
                 <Project
                     firstDivClass="col-md-6"
                     featuretteHeader="Capstone Project: Groceries To Go"
@@ -43,6 +59,7 @@ class ProjectList extends React.Component {
                     imageAltText="A photo of the Groceries To Go cart view"
                 />
 
+                {/* Project component for the Database Application: McLaughlin University */}
                 <Project
                     firstDivClass="col-md-6 order-md-2"
                     featuretteHeader="Database Application: McLaughlin University"
@@ -56,6 +73,7 @@ class ProjectList extends React.Component {
                     imageAltText="A photo of the McLaughlin University home screen"
                 />
 
+                {/* Project component for the Web Development: Java Web Application */}
                 <Project
                     firstDivClass="col-md-6"
                     featuretteHeader="Web Development: Java Web Application"
@@ -74,4 +92,5 @@ class ProjectList extends React.Component {
     }
 }
 
+// Export the ProjectList component as the default export
 export default ProjectList;

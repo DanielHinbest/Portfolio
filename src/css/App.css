@@ -1,18 +1,33 @@
+/**
+ * App.css
+ * 
+ * This file contains the CSS styles for the App component. It includes styles for the main 
+ * application container, logo, header, and links. Additionally, it defines keyframes for 
+ * the logo spin animation.
+ * 
+ * Author: Daniel Hinbest
+ * Date: August 17, 2024
+ */
+
+/* Container for the entire application */
 .App {
   text-align: center;
 }
 
+/* Styling for the logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation for the logo when reduced motion is not preferred */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +39,12 @@
   color: white;
 }
 
+/* Link styling */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes for the logo spin animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
