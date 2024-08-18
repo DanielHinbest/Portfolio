@@ -13,10 +13,13 @@ class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ul className="navbar-nav me-auto mb-2 mb-md-0">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="https://www.github.com/DanielHinbest">GitHub Repositories</a>
+                                    <a className="nav-link" href="https://www.github.com/DanielHinbest">GitHub</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="https://www.linkedin.com/in/daniel-hinbest">LinkedIn Profile</a>
+                                    <a className="nav-link" href="https://www.linkedin.com/in/daniel-hinbest">LinkedIn</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="daniel_hinbest_resume.pdf">Resume</a>
                                 </li>
                             </ul>
                             <ul className="navbar-nav">
