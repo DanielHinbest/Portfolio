@@ -7,7 +7,7 @@ class About extends React.Component {
                 <img width="140" height="140" focusable="false" src={this.props.imagePath} alt=""/>
 
                 <h2>{this.props.sectionTitle}</h2>
-                <p>{this.props.paragraph}</p>
+                <p dangerouslySetInnerHTML={{ __html: this.props.paragraph }}></p>
                 {this.props.button}
             </div>
         );
