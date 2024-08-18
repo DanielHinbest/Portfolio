@@ -27,8 +27,8 @@ class AboutList extends React.Component{
                 the educational technologies that are used at Ontario Tech. This includes but is not limited to Canvas, Mentimeter, Kaltura, and Respondus Lockdown Browser.
                 <br/><br/>
 
-                From August 2022-August 2023, I worked at Scotiabank (contracted through Dawn InfoTek) as an IT Developer where I helped maintain the technical infrastructure
-                alongside a team of developers. 
+                From August 2022 to August 2023, I worked at Scotiabank (contracted through Dawn InfoTek) as an IT Developer, where I helped maintain the technical infrastructure alongside a team of developers. During this time, I focused on enhancing system performance and implementing solutions to streamline operations. 
+                My role involved collaborating closely with team members to address technical challenges and optimize processes.
                 <br/><br/>
 
                 From May to August 2021, I worked in my first position in the IT Industry as an Artificial Intelligence (AI) Research Assistant at the AI Hub at Durham College under the co-op education program. This allowed me to work with AI systems and research how it can be used in our lives.
@@ -42,7 +42,7 @@ class AboutList extends React.Component{
                 I have experience building and maintaining applications for web, desktop, and mobile environments using many languages and technologies.
                 My most proficient language is Java, which I was first introduced to in 2017 while attending high school and have experience building both desktop and web applications in the language. 
                 <br/><br/>
-                
+
                 In post-secondary education, I have also gained experience in C#, Python, C++, PHP, and JavaScript and have used technologies including Spring Framework (Java), Django (Python), Windows Forms, WPF, and ASP.NET (C#), and React (JavaScript). 
                 I am experienced in the use of software testing tools including JUnit and PyTest for white box testing in addition to creating test cases based on requirements and user stories for black box testing.
                 I have knowledge of using SQL databases in SQL Server, PostgreSQL, and MySQL as a database for both web and desktop environments."/>
