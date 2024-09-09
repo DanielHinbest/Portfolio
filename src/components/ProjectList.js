@@ -19,19 +19,6 @@ class ProjectList extends React.Component {
     render() {
         return (
             <div>
-                {/* <Project 
-                    firstDivClass="col-md-6"
-                    featuretteHeader="Software Quality Assurance Project"
-                    description="The Software Quality Assurance project was developed over the course of a 12 week semester at Ontario Tech University in my second full-time semester.
-                    This was a group project on a team of 4 and the objective was to build a console based game distribution software (similar to Steam) that would allow users to buy and sell games.
-                    This was required to have a C++ front end that would then use a Java or Python backend. The main focus of the project was to demonstrate black box and white box testing in an environment
-                    closer to what would happen in a work environment."
-                    secondDivClass="col-md-6"
-                    image={process.env.PUBLIC_URL + "/images/sqa.png"}
-                    GitHubPath="https://github.com/DanielHinbest/CSCI3310"
-                    imageAltText="A photo of the Groceries To Go cart view"
-                /> */}
-
                 {/* Project component for the Software Quality Assurance Project */}
                 <Project 
                     firstDivClass="col-md-6 order-md-2"
@@ -50,7 +37,7 @@ class ProjectList extends React.Component {
                 <Project
                     firstDivClass="col-md-6"
                     featuretteHeader="Capstone Project: Groceries To Go"
-                    description="Groceries To Go was developed as a 12-week capstone project with two classmates, Ryan and Yash, in the final semester of Computer Programming
+                    description="Groceries To Go was developed as a 12-week capstone project with two other group members in the final semester of Computer Programming
                     and Analysis using Java, Spring Framework, and a MySQL database backend. This application provides users access to a series
                     of local grocery stores in Durham Region and would allow them to place orders to be delivered to their homes."
                     secondDivClass="col-md-6"
