@@ -44,7 +44,7 @@ class Header extends React.Component {
                             <ul className="navbar-nav">
                                 {/* Email address */}
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Email: daniel.hinbest@ontariotechu.net</a>
+                                    <a className="nav-link" href="#">Email: daniel.hinbest@proton.me</a>
                                 </li>
                             </ul>
                         </div>
