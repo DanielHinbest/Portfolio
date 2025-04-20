@@ -50,7 +50,7 @@ class Header extends React.Component {
                                 </li>
                                 {/* Email address with icon */}
                                 <li className="nav-item">
-                                    <a className="nav-link" href="mailto:daniel.hinbest@proton.me">
+                                    <a className="nav-link" href="mailto:danielhinbest@rogers.com">
                                         <i className="far fa-envelope me-1"></i>Contact
                                     </a>
                                 </li>
