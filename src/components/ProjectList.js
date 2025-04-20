@@ -20,7 +20,7 @@ class ProjectList extends React.Component {
         return (
             <div className="project-list">
                 {/* Project component for Honours Thesis */}
-                {/* <Project 
+                <Project 
                     firstDivClass="col-md-7"
                     featuretteHeader="Exploring Student White-Box Testing Patterns in a Software Quality Assurance Course"
                     description="My undergraduate thesis research addresses a critical gap in computer science education: the lack of adequate software testing skills among new graduates. Working with the Software Engineering & Education Lab (SEER Lab) under the supervision of Dr. Jeremy Bradbury and Dr. Michael Miljanovic, I conducted a formal study examining how students approach software testing tasks. With approval from Ontario Tech University's Research Ethics Board, I collected and analyzed data from 59 students in CSCI 3060U - Software Quality Assurance during Winter 2025. The study included both surveys and hands-on testing activities that were monitored using IDE tracking software. Key findings revealed that students tend to focus heavily on code editing but often neglect consistent test execution—an insight that could inform improvements in how testing is taught in undergraduate programs."
@@ -30,7 +30,7 @@ class ProjectList extends React.Component {
                     customButton={<a className="btn btn-primary" href="honours_thesis.pdf"><i className="fas fa-file-pdf me-2"></i>View Thesis Paper</a>}
                     imageAltText="Daniel Hinbest presenting honours thesis"
                     technologies={["Python", "Data Analysis", "Software Testing", "Research Methods", "Educational Technology"]}
-                /> */}
+                />
                 {/* Project component for the Software Quality Assurance Project */}
                 <Project 
                     firstDivClass="col-md-7"
