@@ -52,7 +52,7 @@ class ProjectList extends React.Component {
                     image={process.env.PUBLIC_URL + "/images/gtg.jpg"}
                     GitHubPath="https://www.github.com/DanielHinbest/GroceriesToGo"
                     imageAltText="A photo of the Groceries To Go cart view"
-                    technologies={["Java", "Spring Framework", "MySQL", "REST API", "MVC Architecture"]}
+                    technologies={["Java", "Spring Framework", "MySQL", "MVC Architecture"]}
                 />
 
                 {/* Project component for the Database Application: McLaughlin University */}
@@ -64,7 +64,7 @@ class ProjectList extends React.Component {
                     image={process.env.PUBLIC_URL + "/images/mclaughlin_uni.jpg"}
                     GitHubPath="https://www.github.com/DanielHinbest/McLaughlinUniversity"
                     imageAltText="A photo of the McLaughlin University home screen"
-                    technologies={["C#", "WPF", "SQL Server", "Database Design", "MVVM Pattern"]}
+                    technologies={["C#", "WPF", "SQL Server", "Database Design"]}
                 />
 
                 {/* Project component for the Web Development: Java Web Application */}

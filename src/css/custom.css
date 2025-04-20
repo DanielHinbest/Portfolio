@@ -276,12 +276,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
-/* Additional Badge Styling */
+/* Very simple text color fix for all badges */
 .badge {
   color: white !important;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  font-size: 0.75rem;
+}
+
+/* Direct style override for project badges */
+.project-item .badge {
+  color: white !important;
+}
+
+/* Target rounded-pill badges specifically */
+.badge.rounded-pill {
+  color: white !important;
+}
+
+/* Target via attribute selectors as well for maximum coverage */
+[class*="badge"] {
+  color: white !important;
 }
 
 /* Button Styling Enhancement */
@@ -372,4 +384,51 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/**
+ * Add this at the end of your custom.css file to force badge text to be white
+ */
+
+/* Emergency fix for white-on-white badges */
+.badge {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 500 !important;
+}
+
+.project-item .badge {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+span[class*="badge"][style*="background-color"] {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Additional specificity for particular badge colors */
+span.badge[style*="background-color: #1E88E5"],
+span.badge[style*="background-color: #607D8B"],
+span.badge[style*="background-color: #00BCD4"],
+span.badge[style*="background-color: #5C6BC0"] {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Override Bootstrap's text-{color} utilities if they're being applied */
+.badge.text-primary, 
+.badge.text-secondary, 
+.badge.text-success, 
+.badge.text-info, 
+.badge.text-warning, 
+.badge.text-danger,
+.badge.text-light,
+.badge.text-dark {
+  color: white !important;
+}
+
+/* Create a force-white-text class you can directly add to problematic badges */
+.force-white-text {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
 }

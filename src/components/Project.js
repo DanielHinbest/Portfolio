@@ -14,6 +14,7 @@
  * - image: The source URL for the image.
  * - imageAltText: The alt text for the image.
  * - technologies: Array of technologies used in the project (optional).
+ * - customButton: Optional custom button to replace GitHub link.
  * 
  * Author: Daniel Hinbest
  * Date: August 17, 2024
@@ -25,7 +26,7 @@ import React from "react";
 class Project extends React.Component {
     // Render method to display the component
     render() {
-        const { technologies } = this.props;
+        const { technologies, customButton } = this.props;
         
         return (
             <div className="project-item mb-5">
@@ -52,7 +53,7 @@ class Project extends React.Component {
                                         <h5 className="fw-bold mb-2">Technologies Used:</h5>
                                         <div className="d-flex flex-wrap gap-2">
                                             {technologies.map((tech, index) => (
-                                                <span key={index} className="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2">
+                                                <span key={index} className="badge bg-primary text-white rounded-pill px-3 py-2">
                                                     {tech}
                                                 </span>
                                             ))}
@@ -60,11 +61,15 @@ class Project extends React.Component {
                                     </div>
                                 )}
                                 
-                                {/* Link to the project's GitHub repository */}
+                                {/* Link to the project's GitHub repository or custom button */}
                                 <div className="mt-auto">
-                                    <a className="btn btn-primary" href={this.props.GitHubPath} target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-github me-2"></i>View on GitHub
-                                    </a>
+                                    {customButton ? (
+                                        customButton
+                                    ) : this.props.GitHubPath ? (
+                                        <a className="btn btn-primary" href={this.props.GitHubPath} target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-github me-2"></i>View on GitHub
+                                        </a>
+                                    ) : null}
                                 </div>
                             </div>
                         </div>
