@@ -1,80 +1,128 @@
 # Daniel Hinbest's Portfolio
-This is a application built to showcase my skills, experience, and projects. It was written using React and 
-was the chosen framework to get some practice using React for building applications. 
-It will require the installation of Node.js and the downloading of the node modules, which can be done by running the 'npm install' command in the directory.
 
-# Getting Started with Create React App
+A professional portfolio website showcasing my skills, education, and projects as a software developer and computer science student.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌐 Live Website
 
-## Available Scripts
+Visit the live portfolio at [https://danielhinbest.github.io/Portfolio/](https://danielhinbest.github.io/Portfolio/)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Modern UI**: Clean, professional interface with intuitive navigation
+- **Project Showcase**: Detailed project descriptions with technology stacks
+- **Interactive Elements**: Smooth transitions and engaging user experience
+- **Skills & Education**: Comprehensive overview of technical skills and educational background
+- **Professional Experience**: Highlights of work history and accomplishments
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Frontend library for building the user interface
+- **Bootstrap 5**: CSS framework for responsive design
+- **Font Awesome**: Icon library for enhanced visual elements
+- **GitHub Pages**: Hosting solution for the portfolio
 
-### `npm test`
+## 🚀 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+portfolio-website/
+├── public/
+│   ├── images/           # Project and profile images
+│   └── index.html        # Entry HTML file
+├── src/
+│   ├── components/       # React components
+│   │   ├── About.js      # About component for displaying personal info
+│   │   ├── AboutList.js  # List of About components
+│   │   ├── Carousel.js   # Image carousel component
+│   │   ├── Footer.js     # Footer component
+│   │   ├── Header.js     # Header/navigation component
+│   │   ├── Main.js       # Main content component
+│   │   ├── Project.js    # Individual project component
+│   │   └── ProjectList.js # List of Project components
+│   ├── css/              # Stylesheet files
+│   │   ├── App.css       # Core application styles
+│   │   ├── carousel.css  # Carousel-specific styles
+│   │   └── custom.css    # Custom styles for the portfolio
+│   ├── App.js            # Main App component
+│   └── index.js          # React entry point
+└── package.json          # Project dependencies and scripts
+```
 
-### `npm run build`
+## 📋 Features and Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Header Component
+- Navigation links to GitHub, LinkedIn, and resume
+- Responsive mobile-friendly design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Hero Section
+- Professional introduction with profile image
+- Quick overview of key skills
+- Call-to-action buttons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### About Sections
+- Education background
+- Work experience
+- Technical skills overview
+- Accomplishments
 
-#### '$env:BUILD_PATH = 'docs'; npm run build'
+### Projects Section
+- Detailed project descriptions
+- Technology stacks used for each project
+- Links to GitHub repositories
+- Project screenshots
 
-Builds the app for production into the 'docs' folder.\
-It allows for easier upload for deployment into the GitHub Pages website for automatic rebuild.
+### Footer
+- Contact information
+- Social media links
+- Copyright information
 
-### `npm run eject`
+## 🔧 Setup and Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/DanielHinbest/Portfolio.git
+   cd Portfolio
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-## Learn More
+### Building for Production
+1. Build the project:
+   ```
+   $env:BUILD_PATH = 'docs'; npm run build
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. The build will be generated in the `docs` folder for GitHub Pages deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deployment to GitHub Pages
+1. Push the changes to your GitHub repository:
+   ```
+   git add .
+   git commit -m "Built project for GitHub Pages"
+   git push origin main
+   ```
 
-### Code Splitting
+2. Configure GitHub Pages in your repository settings to use the `docs` folder on the `main` branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📬 Contact
 
-### Making a Progressive Web App
+LinkedIn: [https://www.linkedin.com/in/daniel-hinbest](https://www.linkedin.com/in/daniel-hinbest)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: [https://github.com/DanielHinbest](https://github.com/DanielHinbest)
