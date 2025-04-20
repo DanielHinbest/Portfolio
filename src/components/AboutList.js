@@ -11,78 +11,99 @@
  */
 
 import React from "react";
-import About from "./About";
+import About from "./About";  // Make sure this import path is correct
 
 // Define the AboutList component as a class component
 class AboutList extends React.Component {
     // Render method to display the component
     render() {
         return (
-            <div className="row">
+            <div className="row g-4">
                 {/* About section for education */}
                 <About 
                     sectionTitle="My Education" 
-                    imagePath={process.env.PUBLIC_URL + "/images/education.jpg"} 
+                    icon="fas fa-graduation-cap"
                     paragraph="
-                    In 2023, I started studying at Computer Science at Ontario Tech University as part of the college-to-university Advanced Entry program. 
-                    As part of this, I received 60 credit hours directly from the transfer. In this program, I have further enhanced my knowledge by taking classes that focus on software quality and testing, mobile development, data science, among others.
-                    Now in my final year, I also am eligible to participate in an undergraduate thesis project. As part of this, I am working with Dr. Jeremy Bradbury and Dr. Michael Miljanovic in the Software Engineering & Education Lab (SEER Lab) with a 
-                    topic focusing on educating students on software testing.
-                    <br/><br/>
-                    I graduated from Computer Programming and Analysis at Durham College in June 2022. 
-                    During this time, I learned about developing desktop, console, and web applications. I have built learned how to design and implement a SQL database, as well as analyze and solve business problems.
-                    I have received practice by bring provided a case for a business problem and how to plan and implement technology to address it. 
-                    <br/><br/>
-                    While attending Durham College, I've also had the opportunity to get involved
-                    by participating in activities including the First-Year Student Orientation and Open House as a program student representative and would speak with incoming students to discuss the program's studies
-                    and answer questions about the scope and opportunities. I've also served as a student representative on the Program Advisory Committee, which is a board that meets
-                    throughout the year and works to help shape the future of the program with input from students, alumni, faculty, and industry leaders."
+                    <p>Recently completed a <strong>Computer Science</strong> degree at <strong>Ontario Tech University</strong> through the Advanced Entry program, with 60 credit hours transferred from my previous diploma.</p>
+                    
+                    <p>Completed an undergraduate honours thesis project with Dr. Jeremy Bradbury and Dr. Michael Miljanovic in the <a href='https://seerlab.ca' target='_blank' rel='noopener noreferrer'>Software Engineering & Education Lab (SEER Lab)</a>, focusing on software testing education.</p>
+                    
+                    <p>Graduated with an <strong>Advanced Diploma in Computer Programming and Analysis</strong> from Durham College in June 2022, where I mastered desktop, console, and web application development, as well as SQL database design and implementation.</p>
+                    
+                    <p>Actively participated in First-Year Student Orientation and Open House events as a program representative, and served on the Program Advisory Committee to help shape the future of the program.</p>"
                 />
 
                 {/* About section for work experience */}
                 <About 
                     sectionTitle="My Work Experience" 
-                    imagePath={process.env.PUBLIC_URL + "/images/work.png"} 
+                    icon="fas fa-briefcase"
                     paragraph="
-                    Since May 2024, I have been working at the Teching and Learning Centre at Ontario Tech University as Peer Tech Support. In this role, I work with the Educational Technology Analyst to help support students with their use of
-                    the educational technologies that are used at Ontario Tech. This includes but is not limited to Canvas, Mentimeter, Kaltura, and Respondus Lockdown Browser.
-                    <br/><br/>
-                    From August 2022 to August 2023, I worked at Scotiabank (contracted through Dawn InfoTek) as an IT Developer, where I helped maintain the technical infrastructure alongside a team of developers. During this time, I focused on enhancing system performance and implementing solutions to streamline operations. 
-                    My role involved collaborating closely with team members to address technical challenges and optimize processes.
-                    <br/><br/>
-                    From May to August 2021, I worked in my first position in the IT Industry as an Artificial Intelligence (AI) Research Assistant at the AI Hub at Durham College under the co-op education program. This allowed me to work with AI systems and research how it can be used in our lives.
-                    I would spend time researching and test technologies that can be used to provide chatbots for companies, and would build software applications for business clients of the AI Hub.               
-                    <br/><br/>
-                    From September 2021 to April 2022, I worked part-time as a Peer Tutor at Durham College. During this time, I would meet with students in first and second year, who needed assistance in their courses and would help them gain a further understanding on the concepts in the courses.
-                    In this program, I tutored courses that would focus on C#, C++, Python, Java, and SQL from an introductory to intermediate level."
+                    <p>Previously employed as a <strong>Peer Tech Support</strong> at the Teaching and Learning Centre, Ontario Tech University (May 2024 - April 2025), supporting students with educational technologies including Canvas, Mentimeter, Kaltura, and Respondus Lockdown Browser.</p>
+                    
+                    <p>Worked as an <strong>IT Developer</strong> at Scotiabank (contracted through Dawn InfoTek) from August 2022 to August 2023, where I maintained technical infrastructure and enhanced system performance.</p>
+                    
+                    <p>Gained experience as an <strong>Artificial Intelligence (AI) Research Assistant</strong> at the AI Hub, Durham College (May - August 2021), researching chatbot technologies and building software applications for business clients.</p>
+                    
+                    <p>Served as a <strong>Peer Tutor</strong> at Durham College (September 2021 - April 2022), helping first and second-year students with C#, C++, Python, Java, and SQL courses.</p>"
                 />
 
                 {/* About section for technology experience */}
                 <About 
-                    sectionTitle="My Technology Experience" 
-                    imagePath={process.env.PUBLIC_URL + "/images/coding.png"} 
+                    sectionTitle="My Technology Skills" 
+                    icon="fas fa-laptop-code"
                     paragraph="
-                    I have experience building and maintaining applications for web, desktop, and mobile environments using many languages and technologies.
-                    My most proficient language is Java, which I was first introduced to in 2017 while attending high school and have experience building both desktop and web applications in the language. 
-                    <br/><br/>
-                    In post-secondary education, I have also gained experience in C#, Python, C++, PHP, and JavaScript and have used technologies including Spring Framework (Java), Django (Python), Windows Forms, WPF, and ASP.NET (C#), and React (JavaScript). 
-                    I am experienced in the use of software testing tools including JUnit and PyTest for white box testing in addition to creating test cases based on requirements and user stories for black box testing.
-                    I have knowledge of using SQL databases in SQL Server, PostgreSQL, and MySQL as a database for both web and desktop environments."
+                    <div class='row mb-3'>
+                        <div class='col-12'>
+                            <h5 class='fw-bold mb-2'>Programming Languages</h5>
+                            <div class='d-flex flex-wrap gap-2 mb-3'>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>Java</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>C#</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>Python</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>C++</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>JavaScript</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>PHP</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>Kotlin</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='row mb-3'>
+                        <div class='col-12'>
+                            <h5 class='fw-bold mb-2'>Frameworks & Technologies</h5>
+                            <div class='d-flex flex-wrap gap-2 mb-3'>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>Spring Framework</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>Django</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>React</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>ASP.NET</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>Pytest</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>JUnit</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='row'>
+                        <div class='col-12'>
+                            <h5 class='fw-bold mb-2'>Database Systems</h5>
+                            <div class='d-flex flex-wrap gap-2'>
+                                <span class='badge bg-info rounded-pill px-3 py-2'>SQL Server</span>
+                                <span class='badge bg-info rounded-pill px-3 py-2'>PostgreSQL</span>
+                                <span class='badge bg-info rounded-pill px-3 py-2'>MySQL</span>
+                            </div>
+                        </div>
+                    </div>"
                 />
 
                 {/* About section for accomplishments */}
                 <About 
                     sectionTitle="My Accomplishments" 
-                    imagePath={process.env.PUBLIC_URL + "/images/trophy.jpg"} 
+                    icon="fas fa-trophy"
                     paragraph="
-                    In the spring of 2022, I represented Durham College at the 2022 Skills Ontario Coding Competition, where I was competing against students from post-secondary institutions across Ontario and was required to complete tasks related to problem solving, general knowledge, flowcharts, 
-                    and my coding abilities. At the Skills Ontario Closing Ceremony, I was announced as the <a href='https://www.durhamradionews.com/archives/154355'>Gold Medalist in the Post-Secondary Coding Competition.</a>
-                    <br/><br/>               
-                    While studying at Durham College, I graduated in June 2022 with an Ontario College Advanced Diploma and was on the President's Honour Roll. This is achieved by a minimum Cumulative GPA of 4.0 out of 5 (equivalent to an 80% average) in the program.
-                    <br/><br/>
-                    I graduated high school in 2019, and was awarded the Ontario Secondary School Diploma along with other awards
-                    including the Ontario Scholar, which is awarded to students with an average of 80% or higher in their best six Grade 12 courses."
-                    button={<p><a class='btn btn-secondary' href='2022_Results.pdf'>View Skills Ontario Results &raquo;</a></p>}
+                    <p>Won the <strong>Gold Medal</strong> at the 2022 Skills Ontario Coding Competition, competing against students from post-secondary institutions across Ontario in problem-solving, general knowledge, flowcharting, and coding challenges.</p>
+                    
+                    <p>Graduated from Durham College with an <strong>Ontario College Advanced Diploma</strong> and achieved the <strong>President's Honour Roll</strong> status with a minimum Cumulative GPA of 4.0 out of 5 (equivalent to an 80% average).</p>
+                    
+                    <p>Received the <strong>Ontario Scholar</strong> award upon high school graduation in 2019, awarded to students with an average of 80% or higher in their best six Grade 12 courses.</p>"
+                    button={<a className="btn btn-primary" href="2022_Results.pdf">View Skills Ontario Results <i className="fas fa-arrow-right ms-2"></i></a>}
                 />
             </div>
         );

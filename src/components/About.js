@@ -2,14 +2,14 @@
  * About.js
  * 
  * This file defines the About component, which is a React class component
- * that displays an image, a section title, a paragraph, and a button. The content
- * is dynamically passed as props to the component.
+ * that displays a card with an icon, a section title, a paragraph, and an optional button.
+ * The content is dynamically passed as props to the component.
  * 
  * Props:
- * - imagePath: The path to the image to be displayed.
+ * - icon: The Font Awesome icon class to be displayed.
  * - sectionTitle: The title of the section.
  * - paragraph: The content of the paragraph, which can include HTML.
- * - button: A button element to be displayed.
+ * - button: A button element to be displayed (optional).
  * 
  * Author: Daniel Hinbest
  * Date: August 17, 2024
@@ -22,18 +22,28 @@ class About extends React.Component {
     // Render method to display the component
     render() {
         return (
-            <div className="col-lg-6">
-                {/* Image element with dynamic source and alt text */}
-                <img width="140" height="140" focusable="false" src={this.props.imagePath} alt=""/>
+            <div className="col-lg-6 mb-4">
+                <div className="card h-100 shadow border-0">
+                    <div className="card-body p-4">
+                        {/* Icon element with dynamic class */}
+                        <div className="feature-icon mb-3">
+                            <i className={`${this.props.icon} fa-2x text-primary`}></i>
+                        </div>
 
-                {/* Section title with dynamic content */}
-                <h2>{this.props.sectionTitle}</h2>
+                        {/* Section title with dynamic content */}
+                        <h3 className="card-title fw-bold mb-3">{this.props.sectionTitle}</h3>
 
-                {/* Paragraph with dynamic content, allowing HTML */}
-                <p dangerouslySetInnerHTML={{ __html: this.props.paragraph }}></p>
+                        {/* Paragraph with dynamic content, allowing HTML */}
+                        <div className="card-text about-text" dangerouslySetInnerHTML={{ __html: this.props.paragraph }}></div>
 
-                {/* Button element passed as a prop */}
-                {this.props.button}
+                        {/* Button element passed as a prop, if provided */}
+                        {this.props.button && (
+                            <div className="mt-4">
+                                {this.props.button}
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
         );
     }
