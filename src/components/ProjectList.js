@@ -27,7 +27,7 @@ class ProjectList extends React.Component {
                     secondDivClass="col-md-5"
                     image={process.env.PUBLIC_URL + "/images/thesis_presentation.jpg"}
                     GitHubPath=""
-                    customButton={<a className="btn btn-primary" href="honours_thesis.pdf"><i className="fas fa-file-pdf me-2"></i>View Thesis Paper</a>}
+                    customButton={<a className="btn btn-primary" href="daniel_hinbest_honours_thesis.pdf"><i className="fas fa-file-pdf me-2"></i>View Thesis Paper</a>}
                     imageAltText="Daniel Hinbest presenting honours thesis"
                     technologies={["Python", "Data Analysis", "Software Testing", "Research Methods", "Educational Technology"]}
                 />
