@@ -8,7 +8,7 @@
  * Props:
  * - firstDivClass: The CSS class for the first div element.
  * - featuretteHeader: The header text for the project.
- * - description: The description text for the project.
+ * - description: The description text for the project (can be string or React element).
  * - GitHubPath: The URL to the project's GitHub repository.
  * - secondDivClass: The CSS class for the second div element.
  * - image: The source URL for the image.
@@ -26,7 +26,18 @@ import React from "react";
 class Project extends React.Component {
     // Render method to display the component
     render() {
-        const { technologies, customButton } = this.props;
+        const { technologies, customButton, description } = this.props;
+        
+        // Function to handle description rendering
+        const renderDescription = () => {
+            // If description is a React element, render it directly
+            if (React.isValidElement(description)) {
+                return description;
+            }
+            
+            // If description is a string
+            return <p className="card-text">{description}</p>;
+        };
         
         return (
             <div className="project-item mb-5">
@@ -45,7 +56,7 @@ class Project extends React.Component {
                                 <h3 className="card-title fw-bold">{this.props.featuretteHeader}</h3>
                                 
                                 {/* Project description with dynamic content */}
-                                <p className="card-text">{this.props.description}</p>
+                                {renderDescription()}
                                 
                                 {/* Technologies used section if provided */}
                                 {technologies && technologies.length > 0 && (
