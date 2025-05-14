@@ -37,9 +37,9 @@ class Footer extends React.Component {
                 <a className="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/daniel-hinbest" aria-label="LinkedIn">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a className="btn btn-outline-light btn-social mx-1" href="mailto:danielhinbest@rogers.com" aria-label="Email">
+                {/* <a className="btn btn-outline-light btn-social mx-1" href="mailto:danielhinbest@rogers.com" aria-label="Email">
                   <i className="far fa-envelope"></i>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="col-lg-4 text-lg-end">

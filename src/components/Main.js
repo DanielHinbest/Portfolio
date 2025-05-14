@@ -31,7 +31,7 @@ class Main extends React.Component {
                                     <p className="lead mb-4 text-dark">Passionate about creating high-quality software solutions with expertise in Java, C#, Python, and web technologies.</p>
                                     <div className="d-flex gap-3">
                                         <a href="daniel_hinbest_resume.pdf" className="btn btn-primary btn-lg px-4">Download Resume</a>
-                                        <a href="mailto:danielhinbest@rogers.com" className="btn btn-outline-secondary btn-lg px-4">Contact Me</a>
+                                        {/* <a href="mailto:danielhinbest@rogers.com" className="btn btn-outline-secondary btn-lg px-4">Contact Me</a> */}
                                     </div>
                                 </div>
                             </div>
