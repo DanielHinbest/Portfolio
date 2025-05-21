@@ -49,11 +49,11 @@ class Header extends React.Component {
                                     </a>
                                 </li>
                                 {/* Email address with icon */}
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link" href="mailto:danielhinbest@rogers.com">
                                         <i className="far fa-envelope me-1"></i>Contact
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

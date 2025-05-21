@@ -3,16 +3,18 @@
  * 
  * This file defines the Main component, which is a React class component
  * that serves as the main content area of the application. It includes a
- * hero section with a professional introduction, AboutList component, and ProjectList component.
+ * hero section with a professional introduction, AboutList component, ProjectList component,
+ * and ContactForm component.
  * 
  * Author: Daniel Hinbest
- * Date: August 17, 2024
+ * Date: May 20, 2025
  */
 
 import React from "react";
 import AboutList from './AboutList';
 import ProjectList from './ProjectList';
 import Carousel from './Carousel';
+import ContactForm from './ContactForm';
 
 // Define the Main component as a class component
 class Main extends React.Component {
@@ -31,7 +33,7 @@ class Main extends React.Component {
                                     <p className="lead mb-4 text-dark">Passionate about creating high-quality software solutions with expertise in Java, C#, Python, and web technologies.</p>
                                     <div className="d-flex gap-3">
                                         <a href="daniel_hinbest_resume.pdf" className="btn btn-primary btn-lg px-4">Download Resume</a>
-                                        {/* <a href="mailto:danielhinbest@rogers.com" className="btn btn-outline-secondary btn-lg px-4">Contact Me</a> */}
+                                        <a href="#contact" className="btn btn-outline-secondary btn-lg px-4">Contact Me</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,6 +72,23 @@ class Main extends React.Component {
                     <div className="container">
                         <h2 className="section-title text-center mb-5">Featured Projects</h2>
                         <ProjectList />
+                    </div>
+                </section>
+                
+                {/* Contact Section */}
+                <section id="contact" className="contact-section py-5 bg-light">
+                    <div className="container">
+                        <h2 className="section-title text-center mb-5">Contact Me</h2>
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8 mb-4">
+                                <div className="card shadow border-0">
+                                    <div className="card-body p-4">
+                                        <h3 className="card-title fw-bold mb-4 text-center">Get in Touch</h3>
+                                        <ContactForm />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
