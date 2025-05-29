@@ -33,17 +33,6 @@ class ProjectList extends React.Component {
                     imageAltText="Daniel Hinbest presenting honours thesis"
                     technologies={["Python", "Data Analysis", "Software Testing", "Research Methods", "Educational Technology"]}
                 />
-                {/* Project component for the EshopExpress project */}
-                <Project 
-                    firstDivClass="col-md-7"
-                    featuretteHeader="EshopExpress (In Progress)"
-                    description="EshopExpress is a Nintendo-inspired gaming platform built with Java/Spring Boot. Features include game sales, secure authentication, shopping cart, and digital key delivery with responsive design, game categorization, reviews, and wishlists using MVC architecture."
-                    secondDivClass="col-md-5"
-                    image={process.env.PUBLIC_URL + "/images/no_image_available.png"}
-                    GitHubPath="https://github.com/DanielHinbest/EshopExpress"
-                    imageAltText="No image available"
-                    technologies={["Java", "Software Testing", "PostgreSQL", "JUnit"]}
-                />
                 {/* Project component for the Software Quality Assurance Project */}
                 <Project 
                     firstDivClass="col-md-7"
