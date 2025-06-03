@@ -23,12 +23,12 @@ class ProjectList extends React.Component {
                 <Project 
                     firstDivClass="col-md-7"
                     featuretteHeader="Personal Finance Tracker"
-                    description="A personal finance tracker web application built with Flask and SQLite that allows users to track expenses by category, view spending reports, and monitor monthly/weekly totals through an intuitive web interface. The application features expense management with categorization, real-time spending analytics, and comprehensive reporting capabilities. Deployed using Docker containers on Render for production hosting."
+                    description="A secure, multi-user personal finance tracker web application built with Flask and SQLite. Features user authentication with password hashing, expense tracking by category, spending analytics, and comprehensive reporting. Users can register accounts, securely manage personal expenses, view detailed spending reports, and monitor financial trends through an intuitive web interface. The containerized application demonstrates full-stack development skills including user authentication, database relationships, and secure session management."
                     secondDivClass="col-md-5"
                     image={process.env.PUBLIC_URL + "/images/personal-finance-tracker.png"}
                     GitHubPath="https://github.com/DanielHinbest/Personal-Finance-Tracker"
-                    imageAltText="A screenshot of the Personal Finance Tracker expense management interface"
-                    technologies={["Flask", "Python", "SQLite", "HTML/CSS", "Docker"]}
+                    imageAltText="A screenshot of the Personal Finance Tracker expense management interface with user authentication"
+                    technologies={["Flask", "Python", "SQLite", "HTML/CSS", "Docker", "Authentication"]}
                 />
                 {/* Project component for Honours Thesis */}
                 <Project 
