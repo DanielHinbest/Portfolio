@@ -1,0 +1,434 @@
+/**
+ * custom.css
+ * 
+ * This file contains custom CSS styles for the portfolio website.
+ * It includes modern styling for the navbar, hero section, about section,
+ * project cards, and other components.
+ * 
+ * Author: Daniel Hinbest
+ * Date: August 17, 2024
+ */
+
+/* ===== Variables ===== */
+:root {
+  --primary-color: #3498db;
+  --primary-dark: #2980b9;
+  --secondary-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --dark-bg: #1a1a1a;
+  --text-color: #333;
+  --light-text: #f8f9fa;
+  --border-radius: 8px;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-top: 76px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+/* ===== Navbar Styles ===== */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);  /* Darker, more opaque background */
+  padding: 1rem 0;
+  transition: var(--transition);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);  /* Stronger shadow for depth */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);  /* Text shadow for better readability */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.95);  /* Brighter text */
+  font-weight: 600;  /* Bolder font */
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);  /* Text shadow for better readability */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  padding: 6rem 0;
+  background-color: var(--dark-bg);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  max-width: 90%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.profile-image {
+  width: 80%;
+  max-width: 400px;
+  border: 8px solid white;
+  box-shadow: var(--box-shadow);
+}
+
+/* Carousel Styling */
+.profile-carousel-container {
+  max-width: 550px;
+  margin: 0 auto;
+  border: 8px solid white;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;  /* Changed from cover to contain */
+  background-color: #000;  /* Dark background for images */
+}
+
+.carousel-content-wrapper {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: #000;
+  width: 100%;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== About Section ===== */
+.about-section {
+  background-color: var(--light-bg);
+  padding: 5rem 0;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(52, 152, 219, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text strong {
+  color: var(--secondary-color);
+}
+
+/* ===== Projects Section ===== */
+.projects-section {
+  padding: 5rem 0;
+}
+
+.project-item {
+  transition: var(--transition);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-image-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05);
+}
+
+.card {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.card-title {
+  color: var(--secondary-color);
+}
+
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Footer Styles ===== */
+.footer {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  padding: 3rem 0;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 1rem;
+}
+
+/* Very simple text color fix for all badges */
+.badge {
+  color: white !important;
+}
+
+/* Direct style override for project badges */
+.project-item .badge {
+  color: white !important;
+}
+
+/* Target rounded-pill badges specifically */
+.badge.rounded-pill {
+  color: white !important;
+}
+
+/* Target via attribute selectors as well for maximum coverage */
+[class*="badge"] {
+  color: white !important;
+}
+
+/* Button Styling Enhancement */
+.project-item .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 991.98px) {
+  .hero-section {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .hero-section .lead {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .profile-image-container {
+    margin-top: 3rem;
+  }
+  
+  .profile-image {
+    width: 60%;
+  }
+  
+  .project-image-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .project-image-container {
+    height: 200px;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== Animation Styles ===== */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/**
+ * Add this at the end of your custom.css file to force badge text to be white
+ */
+
+/* Emergency fix for white-on-white badges */
+.badge {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 500 !important;
+}
+
+.project-item .badge {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+span[class*="badge"][style*="background-color"] {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Additional specificity for particular badge colors */
+span.badge[style*="background-color: #1E88E5"],
+span.badge[style*="background-color: #607D8B"],
+span.badge[style*="background-color: #00BCD4"],
+span.badge[style*="background-color: #5C6BC0"] {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Override Bootstrap's text-{color} utilities if they're being applied */
+.badge.text-primary, 
+.badge.text-secondary, 
+.badge.text-success, 
+.badge.text-info, 
+.badge.text-warning, 
+.badge.text-danger,
+.badge.text-light,
+.badge.text-dark {
+  color: white !important;
+}
+
+/* Create a force-white-text class you can directly add to problematic badges */
+.force-white-text {
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
