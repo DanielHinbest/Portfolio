@@ -29,7 +29,7 @@ class Main extends React.Component {
                         <div className="row align-items-center">
                             <div className="col-lg-6 text-start">
                                 <div className="hero-content bg-white bg-opacity-85 p-4 rounded shadow">
-                                    <h1 className="display-4 fw-bold mb-4 text-dark">Software Developer & Computer Science Student</h1>
+                                    <h1 className="display-4 fw-bold mb-4 text-dark">Software Developer BSc. (Hons) Computer Science</h1>
                                     <p className="lead mb-4 text-dark">Passionate about creating high-quality software solutions with expertise in Java, C#, Python, and web technologies.</p>
                                     <div className="d-flex gap-3">
                                         <a href="daniel_hinbest_resume.pdf" className="btn btn-primary btn-lg px-4">Download Resume</a>
