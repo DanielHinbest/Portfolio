@@ -24,13 +24,13 @@ class AboutList extends React.Component {
                     sectionTitle="My Education" 
                     icon="fas fa-graduation-cap"
                     paragraph="
-                    <p>I will be starting my <strong>Master of Science in Computer Science</strong> this fall, returning to the <a href='https://seerlab.ca' target='_blank' rel='noopener noreferrer'>Software Engineering & Education Lab (SEER Lab)</a> under the supervision of Dr. Jeremy Bradbury as a Graduate Research Assistant.</p>
+                    <p>I will be starting my <strong>Master of Science in Computer Science</strong> degree at <strong>Ontario Tech University</strong> this fall, returning to the <a href='https://seerlab.ca' target='_blank' rel='noopener noreferrer'>Software Engineering & Education Lab (SEER Lab)</a> under the supervision of Dr. Jeremy Bradbury as a Graduate Research Assistant.</p>
 
                     <p>Recent graduate of a <strong>Bachelor of Science (Honours) in Computer Science</strong> degree at <strong>Ontario Tech University</strong> through the Advanced Entry program, with 60 credit hours transferred from my previous diploma.</p>
                     
                     <p>Completed an undergraduate honours thesis project with Dr. Jeremy Bradbury and Dr. Michael Miljanovic in the <a href='https://seerlab.ca' target='_blank' rel='noopener noreferrer'>SEER Lab</a>, focusing on software testing education.</p>
                     
-                    <p>Graduated with an <strong>Advanced Diploma in Computer Programming and Analysis</strong> from Durham College in June 2022, where I mastered desktop, console, and web application development, as well as SQL database design and implementation.</p>
+                    <p>Graduated with an <strong>Advanced Diploma in Computer Programming and Analysis</strong> from <strong>Durham College</strong> in June 2022, where I mastered desktop, console, and web application development, as well as SQL database design and implementation.</p>
                     
                     <p>Actively participated in First-Year Student Orientation and Open House events as a program representative, and served on the Program Advisory Committee to help shape the future of the program.</p>"
                 />
@@ -40,7 +40,7 @@ class AboutList extends React.Component {
                     sectionTitle="My Work Experience" 
                     icon="fas fa-briefcase"
                     paragraph="
-                    <p>As part of my MSc - Computer Science degree that I will start work on this fall, I will also be working as a Teaching Assistant (TA), supporting Computer Science faculty and students in undergraduate courses.</p>
+                    <p>As part of my MSc - Computer Science degree that I will start work on this fall, I will also be working as a <strong>Teaching Assistant (TA)</strong>, supporting Computer Science faculty and students in undergraduate courses.</p>
 
                     <p>Previously employed as a <strong>Peer Tech Support</strong> at the Teaching and Learning Centre, Ontario Tech University (May 2024 - April 2025), supporting students with educational technologies including Canvas, Mentimeter, Kaltura, and Respondus Lockdown Browser.</p>
                     
