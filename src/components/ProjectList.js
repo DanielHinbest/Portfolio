@@ -19,6 +19,17 @@ class ProjectList extends React.Component {
     render() {
         return (
             <div className="project-list">
+                {/* Project component for the Personal Task Manager */}
+                <Project 
+                    firstDivClass="col-md-7"
+                    featuretteHeader="Personal Task Manager"
+                    description="A modern desktop productivity application built with WPF and C#, featuring comprehensive task management with categorization and priority tracking. The application uses SQLite database with Entity Framework Core for reliable data persistence, implementing a clean service layer architecture. Users can create, edit, and delete tasks with detailed descriptions, set priority levels (High, Medium, Low), organize tasks by custom categories, and track due dates. The application features a responsive WPF interface with real-time updates, visual priority indicators, and user-friendly data validation."
+                    secondDivClass="col-md-5"
+                    image={process.env.PUBLIC_URL + "/images/personal-task-manager.png"}
+                    GitHubPath="https://github.com/DanielHinbest/Personal-Task-Manager"
+                    imageAltText="A screenshot of the Personal Task Manager desktop application showing task management interface"
+                    technologies={["C#", "WPF", ".NET 8", "SQLite", "Entity Framework Core", "Desktop Development"]}
+                />
                 {/* Project component for the Personal Finance Tracker */}
                 <Project 
                     firstDivClass="col-md-7"
