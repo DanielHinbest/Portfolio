@@ -67,6 +67,7 @@ class AboutList extends React.Component {
                                 <span class='badge bg-primary rounded-pill px-3 py-2'>JavaScript</span>
                                 <span class='badge bg-primary rounded-pill px-3 py-2'>PHP</span>
                                 <span class='badge bg-primary rounded-pill px-3 py-2'>Kotlin</span>
+                                <span class='badge bg-primary rounded-pill px-3 py-2'>Flutter</span>
                             </div>
                         </div>
                     </div>
@@ -80,7 +81,10 @@ class AboutList extends React.Component {
                                 <span class='badge bg-secondary rounded-pill px-3 py-2'>React</span>
                                 <span class='badge bg-secondary rounded-pill px-3 py-2'>ASP.NET</span>
                                 <span class='badge bg-secondary rounded-pill px-3 py-2'>Pytest</span>
-                                <span class='badge bg-secondary rounded-pill px-3 py-2'>JUnit</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>JUnit</span>                 
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>.NET</span>
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>Firebase</span>                                
+                                <span class='badge bg-secondary rounded-pill px-3 py-2'>Mobile Development</span>
                             </div>
                         </div>
                     </div>
@@ -91,7 +95,8 @@ class AboutList extends React.Component {
                             <div class='d-flex flex-wrap gap-2'>
                                 <span class='badge bg-info rounded-pill px-3 py-2'>SQL Server</span>
                                 <span class='badge bg-info rounded-pill px-3 py-2'>PostgreSQL</span>
-                                <span class='badge bg-info rounded-pill px-3 py-2'>MySQL</span>
+                                <span class='badge bg-info rounded-pill px-3 py-2'>MySQL</span>                                
+                                <span class='badge bg-info rounded-pill px-3 py-2'>SQLite</span>
                             </div>
                         </div>
                     </div>"

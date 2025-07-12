@@ -19,6 +19,19 @@ class ProjectList extends React.Component {
     render() {
         return (
             <div className="project-list">
+                {/* Project component for the ChatFlow messaging app */}
+                <Project
+                    firstDivClass="col-md-7"
+                    featuretteHeader="ChatFlow - Real-time Messaging App (In Progress)"
+                    description="A cross-platform messaging application currently in development, built with Flutter and Firebase to demonstrate modern mobile development practices and cost-effective deployment strategies. This project showcases real-time chat functionality, user authentication, and message persistence across mobile and web platforms while operating entirely within Firebase's free Spark plan. The application features comprehensive messaging capabilities including real-time chat with instant message delivery, persistent message history, typing indicators, and offline synchronization. User management includes secure email authentication, profile management with initial-based avatars, and real-time presence indicators. The cross-platform architecture supports native iOS and Android applications alongside a Progressive Web App, all with responsive design and platform-specific UI optimizations."
+                    secondDivClass="col-md-5"
+                    image={process.env.PUBLIC_URL + "/images/no_image_available.png"}
+                    //image={process.env.PUBLIC_URL + "/images/chatflow-app.png"}
+                    GitHubPath="https://github.com/DanielHinbest/chatflow"
+                    imageAltText="Image not available"
+                    //imageAltText="A screenshot of the ChatFlow messaging application showing the real-time chat interface"
+                    technologies={["Flutter", "Dart", "Firebase", "Firestore", "Firebase Auth", "Cross-Platform Development"]}
+                />
                 {/* Project component for the Personal Task Manager */}
                 <Project 
                     firstDivClass="col-md-7"
@@ -28,7 +41,7 @@ class ProjectList extends React.Component {
                     image={process.env.PUBLIC_URL + "/images/personal-task-manager.png"}
                     GitHubPath="https://github.com/DanielHinbest/Personal-Task-Manager"
                     imageAltText="A screenshot of the Personal Task Manager desktop application showing task management interface"
-                    technologies={["C#", "WPF", ".NET 8", "SQLite", "Entity Framework Core", "Desktop Development"]}
+                    technologies={["C#", "WPF", ".NET", "SQLite", "Entity Framework Core", "Desktop Development"]}
                 />
                 {/* Project component for the Personal Finance Tracker */}
                 <Project 
