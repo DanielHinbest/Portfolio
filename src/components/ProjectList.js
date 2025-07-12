@@ -54,17 +54,6 @@ class ProjectList extends React.Component {
                     imageAltText="A screenshot of the Personal Finance Tracker expense management interface with user authentication"
                     technologies={["Flask", "Python", "SQLite", "HTML/CSS", "Docker", "Authentication"]}
                 />
-                {/* Project component for the Software Quality Assurance Project */}
-                <Project 
-                    firstDivClass="col-md-7"
-                    featuretteHeader="Software Quality Assurance Project"
-                    description="The Software Quality Assurance project was developed over the course of a 12 week semester at Ontario Tech University in my second full-time semester. This console-based game distribution software (similar to Steam) allows users to buy and sell games, featuring a C++ front end with a Java/Python backend. The project showcases both black box and white box testing methodologies in a simulated work environment."
-                    secondDivClass="col-md-5"
-                    image={process.env.PUBLIC_URL + "/images/sqa.png"}
-                    GitHubPath="https://github.com/DanielHinbest/csci3060"
-                    imageAltText="A photo of the Software Quality Assurance project"
-                    technologies={["C++", "Java", "Software Testing", "Quality Assurance"]}
-                />
                 {/* Project component for the Capstone Project: Groceries To Go */}
                 <Project
                     firstDivClass="col-md-7"
@@ -87,18 +76,6 @@ class ProjectList extends React.Component {
                     GitHubPath="https://www.github.com/DanielHinbest/McLaughlinUniversity"
                     imageAltText="A photo of the McLaughlin University home screen"
                     technologies={["C#", "WPF", "SQL Server", "Database Design"]}
-                />
-
-                {/* Project component for the Web Development: Java Web Application */}
-                <Project
-                    firstDivClass="col-md-7"
-                    featuretteHeader="Web Development: Java Web Application"
-                    description="This Java web application was developed in the fourth semester Web Development course, providing my first experience using Java and JSP for web development. The project features a PostgreSQL database connection and was designed to run in Apache Tomcat 8.0, demonstrating knowledge of Java Servlets, JSP pages, and database connectivity."
-                    secondDivClass="col-md-5"
-                    image={process.env.PUBLIC_URL + "/images/webd4201.jpg"}
-                    GitHubPath="https://www.github.com/DanielHinbest/Java-Web-Development"
-                    imageAltText="A photo of the registration page"
-                    technologies={["Java", "JSP", "Servlets", "PostgreSQL", "Apache Tomcat"]}
                 />
             </div>
         );
