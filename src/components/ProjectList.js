@@ -19,18 +19,18 @@ class ProjectList extends React.Component {
     render() {
         return (
             <div className="project-list">
-                {/* Project component for the QuickNote real-time note app */}
+                {/* Project component for the QuickNote local note app */}
                 <Project
                     firstDivClass="col-md-7"
-                    featuretteHeader="QuickNote - Real-time Note-Taking App (In Progress)"
-                    description="A lightweight mobile note-taking application built with Flutter and Firebase, showcasing real-time synchronization and offline-first architecture. This project demonstrates fundamental mobile development skills including cross-platform UI development, NoSQL database integration, and efficient resource utilization within Firebase's free tier limits. The application features comprehensive note management with create, edit, and delete functionality, real-time synchronization across devices, and robust offline support that automatically syncs when connectivity is restored. Built as a learning project to master Flutter fundamentals and Firebase integration, QuickNote serves as a practical foundation for more complex real-time applications. The clean Material Design interface provides an intuitive user experience while the underlying architecture demonstrates modern mobile development patterns including state management with Provider, local storage with SQLite, and optimized Firestore queries designed to operate efficiently within free tier constraints."
+                    featuretteHeader="QuickNote - Local Note-Taking App (In Progress)"
+                    description="A lightweight mobile note-taking application built with Flutter, showcasing local-first architecture and cross-platform development. This project demonstrates fundamental mobile development skills including native UI development, local database management, and efficient offline-first design patterns. The application features comprehensive note management with create, edit, and delete functionality, persistent local storage, and robust offline support that works completely without internet connectivity. Built as a learning project to master Flutter fundamentals and SQLite integration, QuickNote serves as a practical foundation for understanding mobile data persistence and state management. The clean Material Design interface provides an intuitive user experience while the underlying architecture demonstrates modern mobile development patterns including state management with Provider, local storage with SQLite, and optimized database queries. The app is designed to work seamlessly across Android and iOS platforms, with zero external dependencies and complete privacy through local-only data storage."
                     secondDivClass="col-md-5"
                     image={process.env.PUBLIC_URL + "/images/no_image_available.png"}
                     //image={process.env.PUBLIC_URL + "/images/quicknote-app.png"}
                     GitHubPath="https://github.com/DanielHinbest/QuickNote"
                     imageAltText="Image not available"
                     //imageAltText="A screenshot of the QuickNote application showing the clean note-taking interface"
-                    technologies={["Flutter", "Dart", "Firebase", "Firestore", "SQLite", "Provider", "Material Design"]}
+                    technologies={["Flutter", "Dart", "SQLite", "Cross-platform", "Local Storage"]}
                 />
                 {/* Project component for the Personal Task Manager */}
                 <Project 
