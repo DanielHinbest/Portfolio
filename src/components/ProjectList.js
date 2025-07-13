@@ -19,18 +19,18 @@ class ProjectList extends React.Component {
     render() {
         return (
             <div className="project-list">
-                {/* Project component for the ChatFlow messaging app */}
+                {/* Project component for the QuickNote real-time note app */}
                 <Project
                     firstDivClass="col-md-7"
-                    featuretteHeader="ChatFlow - Real-time Messaging App (In Progress)"
-                    description="A cross-platform messaging application currently in development, built with Flutter and Firebase to demonstrate modern mobile development practices and cost-effective deployment strategies. This project showcases real-time chat functionality, user authentication, and message persistence across mobile and web platforms while operating entirely within Firebase's free Spark plan. The application features comprehensive messaging capabilities including real-time chat with instant message delivery, persistent message history, typing indicators, and offline synchronization. User management includes secure email authentication, profile management with initial-based avatars, and real-time presence indicators. The cross-platform architecture supports native iOS and Android applications alongside a Progressive Web App, all with responsive design and platform-specific UI optimizations."
+                    featuretteHeader="QuickNote - Real-time Note-Taking App (In Progress)"
+                    description="A lightweight mobile note-taking application built with Flutter and Firebase, showcasing real-time synchronization and offline-first architecture. This project demonstrates fundamental mobile development skills including cross-platform UI development, NoSQL database integration, and efficient resource utilization within Firebase's free tier limits. The application features comprehensive note management with create, edit, and delete functionality, real-time synchronization across devices, and robust offline support that automatically syncs when connectivity is restored. Built as a learning project to master Flutter fundamentals and Firebase integration, QuickNote serves as a practical foundation for more complex real-time applications. The clean Material Design interface provides an intuitive user experience while the underlying architecture demonstrates modern mobile development patterns including state management with Provider, local storage with SQLite, and optimized Firestore queries designed to operate efficiently within free tier constraints."
                     secondDivClass="col-md-5"
                     image={process.env.PUBLIC_URL + "/images/no_image_available.png"}
-                    //image={process.env.PUBLIC_URL + "/images/chatflow-app.png"}
-                    GitHubPath="https://github.com/DanielHinbest/chatflow"
+                    //image={process.env.PUBLIC_URL + "/images/quicknote-app.png"}
+                    GitHubPath="https://github.com/DanielHinbest/QuickNote"
                     imageAltText="Image not available"
-                    //imageAltText="A screenshot of the ChatFlow messaging application showing the real-time chat interface"
-                    technologies={["Flutter", "Dart", "Firebase", "Firestore", "Firebase Auth", "Cross-Platform Development"]}
+                    //imageAltText="A screenshot of the QuickNote application showing the clean note-taking interface"
+                    technologies={["Flutter", "Dart", "Firebase", "Firestore", "SQLite", "Provider", "Material Design"]}
                 />
                 {/* Project component for the Personal Task Manager */}
                 <Project 
